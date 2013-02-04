@@ -13,9 +13,11 @@
 						    <header class="article-header">
 								<?php $post_num = $post_num + 1; ?>
 						    	<?php if($post_num == 1){ ?>
-						    	<?php echo $post_num; the_post_thumbnail( 'bones-thumb-600' ); ?>
-							    <?php }else{ ?>
+						    	<?php echo $post_num; the_post_thumbnail( 'bones-thumb-900' ); ?>
+							    <?php }elseif($post_num == 2){ ?>
 							    <?php echo $post_num; the_post_thumbnail( 'bones-thumb-300' ); ?>
+							    <?php }else{ ?>
+							    <?php echo $post_num; the_post_thumbnail( 'bones-thumb-200' ); ?>
 							    <?php } ?>
 							    <h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
                   <p class="byline vcard"><?php
