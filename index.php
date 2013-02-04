@@ -13,7 +13,7 @@
 						    <header class="article-header">
 								<?php $post_num = $post_num + 1; ?>
 						    	<?php if($post_num == 1){ ?>
-						    	<?php echo $post_num; the_post_thumbnail( 'bones-thumb-900' ); ?>
+						    	<?php echo $post_num; the_post_thumbnail( 'bones-thumb-1140' ); ?>
 							    <?php }elseif($post_num == 2){ ?>
 							    <?php echo $post_num; the_post_thumbnail( 'bones-thumb-300' ); ?>
 							    <?php }else{ ?>
